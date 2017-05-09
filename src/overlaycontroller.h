@@ -29,8 +29,8 @@ class OverlayController : public QObject {
 	Q_OBJECT
 
 public:
-	static constexpr const char* applicationKey = "matzman666.MicrophoneControl";
-	static constexpr const char* applicationName = "Mic Control";
+    static constexpr const char* applicationKey = "waylonbrown.SSProfiler";
+    static constexpr const char* applicationName = "SS Profiler";
 	static constexpr const char* applicationVersionString = "v1.0";
 
 private:
@@ -74,7 +74,7 @@ private:
 	QSettings appSettings;
 
 public:
-    OverlayController() : QObject(), appSettings("matzman666", "microphonecontrol") {}
+    OverlayController() : QObject(), appSettings("waylonbrown", "ssprofiler") {}
 	virtual ~OverlayController();
 
 	void Init(std::shared_ptr<AudioManager> audioManager);
