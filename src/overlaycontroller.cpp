@@ -91,13 +91,13 @@ void OverlayController::SetWidget(OverlayWidget *pWidget, const std::string& nam
 	//pWidget->ui->VersionLabel->setText(OverlayController::applicationVersionString);
 
 	if (!vr::VROverlay()) {
-		QMessageBox::critical(nullptr, "Microphone Control Overlay", "Is OpenVR running?");
+        QMessageBox::critical(nullptr, "SS Profiler Overlay", "Is OpenVR running?");
 		throw std::runtime_error(std::string("No Overlay interface"));
 	}
 	vr::VROverlayError overlayError = vr::VROverlay()->CreateDashboardOverlay(key.c_str(), name.c_str(), &m_ulOverlayHandle, &m_ulOverlayThumbnailHandle);
 	if (overlayError != vr::VROverlayError_None) {
 		if (overlayError == vr::VROverlayError_KeyInUse) {
-			QMessageBox::critical(nullptr, "Microphone Control Overlay", "Another instance is already running.");
+            QMessageBox::critical(nullptr, "SSProfiler Overlay", "Another instance is already running.");
 		}
 		throw std::runtime_error(std::string("Failed to create Overlay: " + std::string(vr::VROverlay()->GetOverlayErrorNameFromEnum(overlayError))));
 	}
