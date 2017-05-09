@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
 		controller->Init(std::make_shared < miccontrol::AudioManagerWindows >());
 		controller->SetWidget(pOverlayWidget, miccontrol::OverlayController::applicationName, miccontrol::OverlayController::applicationKey);
 
-		std::string manifestPath = QApplication::applicationDirPath().toStdString() + "\\microphonecontrol.vrmanifest";
+        std::string manifestPath = QApplication::applicationDirPath().toStdString() + "\\ssprofiler.vrmanifest";
 		if (QFile::exists(QString::fromStdString(manifestPath))) {
 			bool firstTime = false;
 			if (!vr::VRApplications()->IsApplicationInstalled(miccontrol::OverlayController::applicationKey)) {
