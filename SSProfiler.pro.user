@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.2.2, 2017-05-08T23:53:38. -->
+<!-- Written by QtCreator 4.2.2, 2017-05-09T12:23:24. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -91,9 +91,9 @@
      </valuemap>
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.2">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProcessStep.Arguments"></value>
-      <value type="QString" key="ProjectExplorer.ProcessStep.Command"></value>
-      <value type="QString" key="ProjectExplorer.ProcessStep.WorkingDirectory">%{buildDir}</value>
+      <value type="QString" key="ProjectExplorer.ProcessStep.Arguments"> third-party\openvr\bin\win64\openvr_api.dll build\bin\win64\openvr_api.dll* /y</value>
+      <value type="QString" key="ProjectExplorer.ProcessStep.Command">xcopy</value>
+      <value type="QString" key="ProjectExplorer.ProcessStep.WorkingDirectory">C:/Users/Waylon/Desktop/SSProfiler</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Custom Process Step</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.ProcessStep</value>
